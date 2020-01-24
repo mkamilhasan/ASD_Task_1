@@ -87,8 +87,11 @@ void insert_first(int arr[], int &n, int x) {
 
     // YOUR CODES HERE
     //-----------------------
-
-
+	for (int i = n; i > 0; i--) {
+		swap(arr[i], arr[i-1]);
+	}
+	arr[0] = x;
+	n++;
     //-----------------------
 }
 
